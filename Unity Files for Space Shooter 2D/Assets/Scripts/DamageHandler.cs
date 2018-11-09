@@ -5,6 +5,8 @@ using UnityEngine;
 public class DamageHandler : MonoBehaviour {
 
 	public int health = 1;
+	public float invulnPeriod = 0f;
+
 	float invulnTimer = 0;
 	int correctLayer;
 
