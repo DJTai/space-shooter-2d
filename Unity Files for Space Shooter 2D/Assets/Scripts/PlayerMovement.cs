@@ -15,22 +15,6 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-//		// Rotate the ship
-//		// Grab our r tation quaternion
-//		Quaternion rot = transform.rotation;
-//		// Grab the Z euler angle
-//		float z = rot.eulerAngles.z;
-//		// Change the Z angle based on input
-//		z += Input.GetAxis ("Horizontal") * rotSpeed * Time.deltaTime * -1;
-//		// Recreate the quaternion
-//		rot = Quaternion.Euler (0, 0, z);
-//		 Feed the quaternion into our rotation
-//		transform.rotation = rot;
-//		// Move the ship
-//		Vector3 pos = transform.position;
-//		Vector3 velocity = new Vector3(0, Input.GetAxis("Vertical") * maxSpeed * Time.deltaTime, 0);
-//		pos += rot * velocity;
-
 		// All we need for OUR game
 		Vector3 pos = transform.position;
 		Vector3 velocity = new Vector3 (Input.GetAxis ("Horizontal") * maxSpeed * Time.deltaTime, 0, 0);
