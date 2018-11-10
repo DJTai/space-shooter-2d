@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerShooting : MonoBehaviour {
 
 	public GameObject bullePrefab;
+	Vector3 bulletOffset = new Vector3 (0, 0.5f, 0);
 
 	public float fireDelay = 0.25f;
 	float cooldownTimer = 0;
@@ -18,9 +19,10 @@ public class PlayerShooting : MonoBehaviour {
 			// Shoot!
 			cooldownTimer = fireDelay;
 
-			Vector3 bulletOffset = transform.rotation * new Vector3 (0, 0.5f, 0);
+			Vector3 offset = transform.rotation * bulletOffset;
 
-			Instantiate (bullePrefab, transform.position + bulletOffset, transform.rotation);
+			GameObject bulletGO = (GameObject)Instantiate (bullePrefab, transform.position + offset, transform.rotation);
+			bulletGO.layer = gameObject.layer;
 		}
 			
 	}
