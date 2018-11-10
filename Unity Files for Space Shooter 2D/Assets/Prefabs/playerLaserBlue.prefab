@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114872181875109514}
   - component: {fileID: 114202475269489386}
   m_Layer: 8
-  m_Name: laserBlue01
+  m_Name: playerLaserBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8551f2e519afa124089446c7cc615718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 1.5
+  timer: 0.9
 --- !u!114 &114230124748485848
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad5878e6f6c08314586a20165d2258fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
+  maxSpeed: 10
 --- !u!212 &212837010316716236
 SpriteRenderer:
   m_ObjectHideFlags: 1
