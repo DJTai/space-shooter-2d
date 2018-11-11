@@ -16,17 +16,17 @@ public class FollowPlayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (null == player) {
+		if (player == null) {
 			// Find the player's ship
-			GameObject go = GameObject.Find("playerShip_blue");
+			GameObject go = GameObject.FindWithTag("Player");
 
-			if (null != go) {
+			if (go != null) {
 				player = go.transform;
 			}
 		}
 
 		// Found the player or player doesn't exist
-		if (null == player) {
+		if (player == null) {
 			return;  // Try again next frame
 		}
 

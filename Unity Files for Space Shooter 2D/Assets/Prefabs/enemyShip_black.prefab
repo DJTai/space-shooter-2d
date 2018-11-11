@@ -36,11 +36,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4750121431339818}
   - component: {fileID: 50040761196685528}
+  - component: {fileID: 60256512852859472}
   - component: {fileID: 114816948052477296}
   - component: {fileID: 114193495114398826}
   - component: {fileID: 114532654482265732}
   - component: {fileID: 114863322434387052}
-  - component: {fileID: 60256512852859472}
   m_Layer: 9
   m_Name: enemyShip_black
   m_TagString: Untagged
@@ -67,14 +67,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1920178633545382}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
   m_LocalPosition: {x: -0.17243986, y: 3.7745242, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4066100483315494}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
 --- !u!50 &50040761196685528
 Rigidbody2D:
   serializedVersion: 4

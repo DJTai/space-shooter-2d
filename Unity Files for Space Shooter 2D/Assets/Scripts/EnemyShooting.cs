@@ -6,9 +6,13 @@ public class EnemyShooting : MonoBehaviour {
 
 	public GameObject bullePrefab;
 	Vector3 bulletOffset = new Vector3 (0, 0.5f, 0);
-
+	int bulletLayer;
 	public float fireDelay = 0.75f;
 	float cooldownTimer = 0;
+
+	void Start() {
+		bulletLayer = gameObject.layer;
+	}
 
 	// Update is called once per frame
 	void Update () {
