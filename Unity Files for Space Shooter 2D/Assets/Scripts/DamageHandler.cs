@@ -4,30 +4,59 @@ using UnityEngine;
 
 public class DamageHandler : MonoBehaviour {
 
-	public int health = 1;
-	public float invulnPeriod = 0f;
+	public int health = 2;
+	public float invulnPeriod = 1f;
 
-	float invulnTimer = 0;
+	float invulnTimer = 0f;
+	 //float invulnAnimTimer = 1f;  // TODO:
 	int correctLayer;
+
+	SpriteRenderer spriteRend;
 
 	void Start() {
 		correctLayer = gameObject.layer;
+
+		// Only gets rendered on parent object
+		spriteRend = GetComponent<SpriteRenderer> ();
+
+		if (spriteRend == null) {
+			spriteRend = transform.GetComponentInChildren<SpriteRenderer> ();
+
+			if (spriteRend == null) {
+				Debug.LogError ("Object " + gameObject.name + " has no sprite rendered");
+			}
+		}
 	}
 
 	void OnTriggerEnter2D() {
-		Debug.Log ("Trigger!");
-
+		// Player was hit
 		health--;
-		invulnTimer = 0.50f;
-		gameObject.layer = 10;
+
+		if (invulnPeriod > 0) {
+			invulnTimer = invulnPeriod;  // Set timer
+			gameObject.layer = 10;       // Send user to invulnerable layer
+		}
 	}
 
 	void Update() {
 
-		invulnTimer -= Time.deltaTime;
+		if (invulnTimer > 0) {
+			invulnTimer -= Time.deltaTime;
 
-		if (invulnTimer <= 0) {
-			gameObject.layer = correctLayer;
+			if (invulnTimer <= 0) {
+				// Display player's sprite renderer
+				gameObject.layer = correctLayer;
+				if (spriteRend != null) {
+					spriteRend.enabled = true;
+				}
+
+			} else {
+
+				// TODO: Update w/ a better method OR an actual animation
+				if (spriteRend != null) {
+					spriteRend.enabled = !spriteRend.enabled;
+				}
+			}
 		}
 
 		if (health <= 0) {
