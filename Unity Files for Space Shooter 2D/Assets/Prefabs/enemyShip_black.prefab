@@ -37,10 +37,10 @@ GameObject:
   - component: {fileID: 4750121431339818}
   - component: {fileID: 50040761196685528}
   - component: {fileID: 60256512852859472}
-  - component: {fileID: 114816948052477296}
-  - component: {fileID: 114193495114398826}
   - component: {fileID: 114532654482265732}
+  - component: {fileID: 114816948052477296}
   - component: {fileID: 114863322434387052}
+  - component: {fileID: 114193495114398826}
   m_Layer: 9
   m_Name: enemyShip_black
   m_TagString: Untagged
