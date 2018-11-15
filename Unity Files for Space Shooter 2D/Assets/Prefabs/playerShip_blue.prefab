@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114193203793992358}
   m_Layer: 8
   m_Name: playerShip_blue
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullePrefab: {fileID: 1654300011801034, guid: 98005266779c23f4b96a5a5f4136aa16,
     type: 2}
-  fireDelay: 0.1
+  fireDelay: 0.15
 --- !u!114 &114565313925217770
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -152,7 +152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 10
-  rotSpeed: 180
 --- !u!212 &212732084059543866
 SpriteRenderer:
   m_ObjectHideFlags: 1
