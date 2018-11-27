@@ -31,6 +31,7 @@ public class EnemyShooting : MonoBehaviour {
 		cooldownTimer -= Time.deltaTime;
 
 		if (cooldownTimer <= 0 && player != null && Vector3.Distance(transform.position, player.position) < 8) {
+			// NOTE: Distance < 8 is how far away the enemy will be until they fire
 			// Shoot!
 			cooldownTimer = fireDelay;
 

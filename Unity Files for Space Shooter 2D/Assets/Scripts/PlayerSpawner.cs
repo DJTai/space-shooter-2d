@@ -33,11 +33,17 @@ public class PlayerSpawner : MonoBehaviour {
 		}
 	}
 
+	/**
+	 * Displays the number of remaining lives on the GUI
+	 **/
 	void OnGUI() {
 		if (numLives > 0 || playerInstance != null) {
 			GUI.Label (new Rect (0, 0, 150, 50), "Remaining Lives: " + numLives);
 		} else {
 			GUI.Label (new Rect (Screen.width / 2 - 50, Screen.height / 2 - 25, 100, 50), "GAME OVER");
+
+			// Call GameManger's GameOver method
+			FindObjectOfType<GameManager> ().GameOver ();
 		}
 	}
 }

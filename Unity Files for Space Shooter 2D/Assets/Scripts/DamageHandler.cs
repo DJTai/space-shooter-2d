@@ -11,10 +11,10 @@ public class DamageHandler : MonoBehaviour {
 	 //float invulnAnimTimer = 1f;  // TODO:
 	int correctLayer;
 
-	SpriteRenderer spriteRend;
+	SpriteRenderer spriteRend;  // GameObject's SpriteRenderer, i.e., the graphics
 
 	void Start() {
-		correctLayer = gameObject.layer;
+		correctLayer = gameObject.layer;  // Ensure the object is created on the correct layer
 
 		// Only gets rendered on parent object
 		spriteRend = GetComponent<SpriteRenderer> ();
@@ -51,7 +51,6 @@ public class DamageHandler : MonoBehaviour {
 				}
 
 			} else {
-
 				// TODO: Update w/ a better method OR an actual animation
 				if (spriteRend != null) {
 					spriteRend.enabled = !spriteRend.enabled;
