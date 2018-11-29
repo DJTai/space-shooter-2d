@@ -52,4 +52,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restartDelay: 5
+  nextLevelDelay: 5
   completeLevelUI: {fileID: 0}
