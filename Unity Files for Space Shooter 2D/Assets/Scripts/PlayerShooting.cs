@@ -10,8 +10,11 @@ public class PlayerShooting : MonoBehaviour {
 	public float fireDelay = 0.25f;
 	float cooldownTimer = 0;
 
+	AudioSource playerShootSound;
+
 	void Start() {
 		bulletLayer = gameObject.layer;
+		playerShootSound = this.GetComponent<AudioSource>();
 	}
 
 	// Update is called once per frame
@@ -22,6 +25,7 @@ public class PlayerShooting : MonoBehaviour {
 		if (Input.GetButton ("Fire1") && cooldownTimer <= 0) {
 			// Shoot!
 			cooldownTimer = fireDelay;
+			playerShootSound.Play ();
 
 			Vector3 offset = transform.rotation * bulletOffset;
 
