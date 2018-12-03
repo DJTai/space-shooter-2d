@@ -69,6 +69,7 @@ public class EnemySpawner : MonoBehaviour
 				bossDefeated = true;
 				FindObjectOfType<GameManager> ().BossDefeated ();
 			}
+
 		}
 	}
 }

@@ -636,6 +636,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1143355519550152, guid: b6a5ec17db011c8488f0a5bf54483cfa, type: 2}
+      propertyPath: m_Name
+      value: ScoreText
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6a5ec17db011c8488f0a5bf54483cfa, type: 2}
   m_IsPrefabParent: 0
@@ -644,8 +648,24 @@ GameObject:
   m_PrefabParentObject: {fileID: 1854382264988344, guid: b6a5ec17db011c8488f0a5bf54483cfa,
     type: 2}
   m_PrefabInternal: {fileID: 1486111257}
---- !u!1 &1589757841
+--- !u!1 &1486111259 stripped
 GameObject:
+  m_PrefabParentObject: {fileID: 1143355519550152, guid: b6a5ec17db011c8488f0a5bf54483cfa,
+    type: 2}
+  m_PrefabInternal: {fileID: 1486111257}
+--- !u!114 &1486111260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1486111259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d487b004ae7240f1aeee4bf0c551bef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &1901231630
+Prefab:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}

@@ -5,6 +5,7 @@ using UnityEngine;
 public class DamageHandler : MonoBehaviour {
 
 	public int health = 2;
+	public int points = 0;
 	public float invulnPeriod = 1f;
 
 	float invulnTimer = 0f;
@@ -36,6 +37,7 @@ public class DamageHandler : MonoBehaviour {
 			invulnTimer = invulnPeriod;  // Set timer
 			gameObject.layer = 10;       // Send user to invulnerable layer
 		}
+
 	}
 
 	void Update() {
@@ -65,5 +67,7 @@ public class DamageHandler : MonoBehaviour {
 
 	void Die() {
 		Destroy (gameObject);
+		Score.scoreValue += points;
+		points = 0;
 	}
 }

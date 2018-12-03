@@ -37,4 +37,9 @@ public class GameManager : MonoBehaviour {
 		// Load the next level as indicated in the build settings
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
 	}
+
+	void EnterName() {
+		// Load the Initials Screen
+		SceneManager.LoadScene ("EnterNameScene");
+	}
 }
