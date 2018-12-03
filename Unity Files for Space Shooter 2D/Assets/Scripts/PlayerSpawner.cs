@@ -42,7 +42,7 @@ public class PlayerSpawner : MonoBehaviour {
 		} else {
 			GUI.Label (new Rect (Screen.width / 2 - 50, Screen.height / 2 - 25, 100, 50), "GAME OVER");
 
-			// Go to Initials Screen
+			// Call GameManger's GameOver method
 			FindObjectOfType<GameManager> ().GameOver ();
 		}
 	}

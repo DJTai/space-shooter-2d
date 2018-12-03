@@ -175,7 +175,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 20
-  points: 20
   invulnPeriod: 0
 --- !u!114 &114931584600484844
 MonoBehaviour:

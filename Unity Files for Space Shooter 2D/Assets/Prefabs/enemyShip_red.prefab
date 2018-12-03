@@ -187,7 +187,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
-  points: 10
   invulnPeriod: 0
 --- !u!212 &212901546407902376
 SpriteRenderer:
