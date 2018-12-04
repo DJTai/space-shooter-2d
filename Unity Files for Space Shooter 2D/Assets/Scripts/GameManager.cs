@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour {
 	public void GameOver() {
 		// Player died before defeating the boss
 		Debug.Log ("Game over");
-		Invoke ("RestartLevel", restartDelay);
+		SceneManager.LoadScene(1, LoadSceneMode.Single);
 	}
 
 	public void BossDefeated() {
