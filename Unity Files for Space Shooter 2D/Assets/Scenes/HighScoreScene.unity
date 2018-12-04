@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 171155842}
   - component: {fileID: 171155841}
   m_Layer: 5
-  m_Name: Button
+  m_Name: SubmitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114996076645718958, guid: e727d698ba5981344bc4859a5c7ed7df,
+      - m_Target: {fileID: 114522431900940710, guid: 8773114b489575f45b198f7f591308db,
           type: 2}
         m_MethodName: setText
         m_Mode: 1
@@ -372,7 +372,7 @@ RectTransform:
   m_Children:
   - {fileID: 651964495}
   m_Father: {fileID: 1128675046}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1001,8 +1001,8 @@ RectTransform:
   - {fileID: 1706329893}
   - {fileID: 1372127132}
   - {fileID: 1357960135}
-  - {fileID: 1467355237}
   - {fileID: 171155844}
+  - {fileID: 1467355237}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1061,6 +1061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25777e1be94f144a68958e6b64dd4964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highScore1: 0
 --- !u!114 &1357960137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1349,7 +1350,7 @@ RectTransform:
   m_Children:
   - {fileID: 893324306}
   m_Father: {fileID: 1128675046}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
