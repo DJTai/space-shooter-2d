@@ -618,7 +618,6 @@ GameObject:
   - component: {fileID: 1428772103}
   - component: {fileID: 1428772106}
   - component: {fileID: 1428772105}
-  - component: {fileID: 1428772104}
   m_Layer: 5
   m_Name: HighScores
   m_TagString: Untagged
@@ -644,18 +643,6 @@ RectTransform:
   m_AnchoredPosition: {x: -6.5, y: -13.5}
   m_SizeDelta: {x: 363.6, y: 278.2}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1428772104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1428772102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25777e1be94f144a68958e6b64dd4964, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialsEntered: {fileID: 0}
 --- !u!114 &1428772105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -688,7 +675,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 'XXX:'
 --- !u!222 &1428772106
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -50,4 +50,12 @@ public class HighScores : MonoBehaviour {
 
 		SceneManager.LoadScene (0, LoadSceneMode.Single);
 	}
+
+	void Start (){
+		printText ();
+	}
+
+	void Update (){
+		setText ();
+	}
 }
