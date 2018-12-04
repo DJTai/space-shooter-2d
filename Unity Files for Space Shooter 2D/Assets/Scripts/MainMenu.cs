@@ -18,4 +18,8 @@ public class MainMenu : MonoBehaviour {
 	public void returnHome(){
 		SceneManager.LoadScene (0, LoadSceneMode.Single);
 	}
+
+	public void printScore() {
+		HighScores.setText ();
+	}
 }

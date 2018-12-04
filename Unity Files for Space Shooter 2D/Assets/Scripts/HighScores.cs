@@ -14,15 +14,9 @@ public class HighScores : MonoBehaviour {
 	public static string initials1 = "XXX";
 	public static string initials2 = "XXX";
 	public static string initials3 = "XXX";
-	Text text;
 	public InputField initialsEntered;
 
 
-	public void printText(){
-		text.text = initials1 + ":   " + highScore1 + "\r\n" +
-			initials2 + ":   " + highScore2 + "\r\n" +
-			initials3 + ":   " + highScore3 + "\r\n";
-	}
 
 	public void setText(){
 		tempInitials = initialsEntered.ToString ();
@@ -33,29 +27,18 @@ public class HighScores : MonoBehaviour {
 			initials2 = initials1;
 			highScore1 = tempHighScore;
 			initials1 = tempInitials;
-			printText ();
 		} else if (tempHighScore >= highScore2) {
 			highScore3 = highScore2;
 			initials3 = initials2;
 			highScore2 = tempHighScore;
 			initials2 = tempInitials;
-			printText ();
 		} else if (tempHighScore >= highScore3) {
 			highScore3 = tempHighScore;
 			initials3 = tempInitials;
-			printText ();
 		} else {
-			printText ();
 		}
 
 		SceneManager.LoadScene (0, LoadSceneMode.Single);
 	}
-
-	void Start (){
-		printText ();
-	}
-
-	void Update (){
-		setText ();
-	}
+		
 }
