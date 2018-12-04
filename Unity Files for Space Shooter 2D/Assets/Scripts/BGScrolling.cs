@@ -19,9 +19,8 @@ public class BGScrolling : MonoBehaviour {
     {
 
         transform.Translate((new Vector3(1, 0, 0)) * moveSpeed * Time.deltaTime);
-
-        
-        if (transform.position.y < -30.87697)
+           
+        if (transform.position.y < -33.22028)
         {
             transform.position = startPOS;
         }
