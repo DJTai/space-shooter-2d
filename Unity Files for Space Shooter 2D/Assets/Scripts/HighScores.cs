@@ -21,9 +21,35 @@ public class HighScores : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		if(highScore1 >= highScore2 && highScore2 >= highScore3){
 		text.text = initials1 + ":   " + highScore1 + "\r\n" +
 			initials2 + ":   " + highScore2 +  "\r\n" +
 			initials3 + ":   " + highScore3;
-		
+		}
+		else if(highScore1 >= highScore3 && highScore2 <= highScore3){
+			text.text = initials1 + ":   " + highScore1 + "\r\n" +
+				initials3 + ":   " + highScore3 +  "\r\n" +
+				initials2 + ":   " + highScore2;
+		}
+		else if(highScore2 >= highScore3 && highScore1 <= highScore3){
+			text.text = initials2 + ":   " + highScore2 + "\r\n" +
+				initials3 + ":   " + highScore3 +  "\r\n" +
+				initials1 + ":   " + highScore1;
+		}
+		else if(highScore2 >= highScore3 && highScore1 >= highScore3){
+			text.text = initials2 + ":   " + highScore2 + "\r\n" +
+				initials1 + ":   " + highScore1 +  "\r\n" +
+				initials3 + ":   " + highScore3;
+		}
+		else if(highScore1 <= highScore2 && highScore2 <= highScore3){
+			text.text = initials3 + ":   " + highScore3 + "\r\n" +
+				initials2 + ":   " + highScore2 +  "\r\n" +
+				initials1 + ":   " + highScore1;
+		}
+		else{
+			text.text = initials3 + ":   " + highScore3 + "\r\n" +
+				initials1 + ":   " + highScore1 +  "\r\n" +
+				initials2 + ":   " + highScore2;
+		}
 	}
 }

@@ -405,7 +405,12 @@ Prefab:
     - target: {fileID: 224870428650443404, guid: b6a5ec17db011c8488f0a5bf54483cfa,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 73
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114080537157623910, guid: b6a5ec17db011c8488f0a5bf54483cfa,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6a5ec17db011c8488f0a5bf54483cfa, type: 2}
@@ -468,6 +473,21 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4508684001106792, guid: aca2e52edbd36904e9458c7ab7edf0ae, type: 2}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20469556605689470, guid: aca2e52edbd36904e9458c7ab7edf0ae,
+        type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20469556605689470, guid: aca2e52edbd36904e9458c7ab7edf0ae,
+        type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20469556605689470, guid: aca2e52edbd36904e9458c7ab7edf0ae,
+        type: 2}
+      propertyPath: m_BackGroundColor.b
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
