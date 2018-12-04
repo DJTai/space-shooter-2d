@@ -487,6 +487,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1387573789931744, guid: e727d698ba5981344bc4859a5c7ed7df, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e727d698ba5981344bc4859a5c7ed7df, type: 2}
   m_IsPrefabParent: 0
@@ -621,7 +625,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1428772103
 RectTransform:
   m_ObjectHideFlags: 0
@@ -651,6 +655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25777e1be94f144a68958e6b64dd4964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialsEntered: {fileID: 0}
 --- !u!114 &1428772105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,7 +688,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &1428772106
 CanvasRenderer:
   m_ObjectHideFlags: 0
