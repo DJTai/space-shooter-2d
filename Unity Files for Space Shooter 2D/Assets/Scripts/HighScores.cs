@@ -14,8 +14,7 @@ public class HighScores : MonoBehaviour {
 	public static string initials1 = "XXX";
 	public static string initials2 = "XXX";
 	public static string initials3 = "XXX";
-	public InputField initialsEntered;
-
+	public static InputField initialsEntered;
 
 
 	public void setText(){

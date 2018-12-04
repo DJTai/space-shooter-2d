@@ -313,9 +313,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1347997263230632, guid: e727d698ba5981344bc4859a5c7ed7df,
+      - m_Target: {fileID: 114996076645718958, guid: e727d698ba5981344bc4859a5c7ed7df,
           type: 2}
-        m_MethodName: 
+        m_MethodName: setText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -706,7 +706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 692c740d25ae3554fbdee1fff66cfa9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 0
 --- !u!212 &900617664
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1061,7 +1061,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25777e1be94f144a68958e6b64dd4964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialsEntered: {fileID: 1357960137}
 --- !u!114 &1357960137
 MonoBehaviour:
   m_ObjectHideFlags: 0
