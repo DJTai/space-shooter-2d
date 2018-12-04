@@ -460,9 +460,29 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1143355519550152, guid: b6a5ec17db011c8488f0a5bf54483cfa, type: 2}
+      propertyPath: m_Name
+      value: ScoreText
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6a5ec17db011c8488f0a5bf54483cfa, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &581710502 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1143355519550152, guid: b6a5ec17db011c8488f0a5bf54483cfa,
+    type: 2}
+  m_PrefabInternal: {fileID: 581710501}
+--- !u!114 &581710503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 581710502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8dea0f667cc541389ad82b324dad559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &946617668
 Prefab:
   m_ObjectHideFlags: 0
