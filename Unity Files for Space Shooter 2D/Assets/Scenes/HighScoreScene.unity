@@ -313,8 +313,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: setText
+      - m_Target: {fileID: 1347997263230632, guid: e727d698ba5981344bc4859a5c7ed7df,
+          type: 2}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

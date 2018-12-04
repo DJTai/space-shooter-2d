@@ -20,6 +20,5 @@ public class MainMenu : MonoBehaviour {
 	}
 
 	public void printScore() {
-		HighScores.setText ();
 	}
 }
